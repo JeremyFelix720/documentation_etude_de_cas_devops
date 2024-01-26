@@ -16,7 +16,7 @@ ___
   - solution : trouver un framework d'API qui est compatible avec les microservices et qui peut interpretter les langages C++ et MatLab(ne pas proposer NextJS car c'est du fullstack et que les programmes sont uniquement écrit en JavaScript)
 
 ___
-### FONCTIONNEMENT
+### FONCTIONNEMENT INTERNE
 
 - réunions hebdomadaires pendant lesquelles on aborde tour à tour les travaux effectués durant la semaine précédente et ceux envisagés pour la semaine actuelle
   - solution : ajouter au bilan hebodomaire existant la méthode Agile du "Daily scrum" (consistant à organiser une brève réunion quotidienne concernant uniquement les membres de l’entreprise travaillant sur le sprint) afin d'avoir un horizon à court terme du travail à réaliser.
@@ -85,7 +85,7 @@ ___
 > **Reprendre les questions pour la Proposition de Solution et y répondre**
 
 
-
+___
 ## BENCHMARK DES OUTILS POUR CHAQUE BESOIN IDENTIFIE
 
 - Framework d'API divisés en micro services et multi langages :
@@ -129,10 +129,55 @@ ___
 -  Qu'est-ce que c'est des "routines supplémentaires" ?
   - Réponse
 
-- Qu'est-ce qu'un "CTO" ?
-  -
+- Est-ce qu'il a besoin de diviser en micro services toutes les modules de l'application ? Même question pour les services existants qui sont déjà en état de fonctionnement ? (car cela demanderait surement beaucoup de travail aux develloppeurs de changer toute l'architecture de leur application)
 
--
--
--
--
+- Quelles données de l'application sont concernées par le CRUD ?
+
+- Les briques logicielles de modélisation de systèmes flottant multi-corps articulés et des liaisons souples de type câble sont-elles opérationnelles ?
+
+___
+
+**Questions pour la Proposition de Solution :**
+
+1. **Décomposition en Microservices :**
+
+  - Quelles fonctionnalités spécifiques de l'application peuvent être transformées en microservices indépendants ?
+    - la reproduction avec une haute fidélité des charges de glace et les mouvements des structures offshores
+    - le calcul de la dynamique de la structure et de la glace par le moteur de simulation
+    - le génération de champs de glace
+    - le prétraitement des fichiers d’entrée
+    - le post-traitement des résultats (comme les graphes ou les animations) 
+    - les briques logicielles de modélisation de systèmes flottant multi-corps articulés et des liaisons souples de type câble
+    - [le module de visualisation]
+    - la gestion des utilisateurs (s'il y en a une)
+
+> Schéma avec les 2 options :
+  - modules existants + futures modules sous forme d'une app monolytique (où le backend ne contient qu'une API)
+  - modules estistant + futures modules sous forme d'une app en mi (où le backend est divisé en plusieurs API)
+
+
+  - Comment assurer la cohérence et la communication entre les équipes travaillant sur différents microservices ?
+    - trouver un framework d'API qui est compatible avec les microservices et qui peut interpretter les langages C++ et MatLab (ne pas proposer NextJS car c'est du fullstack et que les programmes sont uniquement écrit en JavaScript)
+    -
+
+
+2. **Containerisation avec Docker :**
+  - Comment Docker peut-il être utilisé pour containeriser chaque microservice ?
+  - Comment gérer les dépendances entre microservices dans un environnement Dockerisé ?
+
+3. **Orchestration avec Kubernetes :**
+  - Pourquoi Kubernetes est-il essentiel pour orchestrer le déploiement des microservices ?
+  - Comment garantir la flexibilité et l'évolutivité des microservices grâce à Kubernetes ?
+
+4. **Chaîne CI/CD Automatisée :**
+  - Comment mettre en place une chaîne CI/CD tenant compte de la séparation entre les équipes scientifiques et de production ?
+  - Quelles étapes spécifiques doivent être automatisées pour garantir un processus CI/CD fiable ?
+
+5. **Tests Automatisés :**
+  - Comment intégrer des tests automatisés à chaque étape du processus CI/CD ?
+  - Quels types de tests sont essentiels pour assurer la stabilité des microservices ?
+
+6. **Surveillance et Logging :**
+  - Comment mettre en place une surveillance efficace des microservices en production ?
+  - Quels mécanismes de logging peuvent aider à identifier rapidement les problèmes potentiels ?
+
