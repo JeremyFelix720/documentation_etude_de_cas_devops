@@ -30,3 +30,40 @@
 
 
 ____
+ECLAIRCICEMENT D'ANTHONY :
+
+
+
+- simulateur d'opération navale permet d'éviter de mettre en jeu des ressources matérielles couteuse pour tester la navigation du brise-glace et des super-tanqueurs dans des mers de glace.
+
+
+
+- pas des microservices, mais plus
+
+- coeur du projet = moteur de simu > on est pas censé le décomposer en microservice (180.000 lignes de code)
+> on peut envisager une découpe du simulateur en monolythique mais cela demanderait un travail trop consé on peut rien y faire si les 
+> faire un rendu plus joli mais sans alterer les calculs
+> **FAIRE UNE VEILLE SUR LES DIFFERENTS MOTEURS GRAPHIQUES LES PLUS ADAPTEE !** (+ mettre les sources)
+> mettre en place des microservices pour intégrer les nouveaux modules à l'appli existante. 
+
+
+- Objectif (se concentrer là-dessus)= offrir une représentation des données calculés pour VOIR le chemin à prendre en rajoutant un moteur graphique
+> faire des tests unitaires
+> **faire une introduction de présentation de l'appli actuelle avec les rendus actuels (insérer les figures sibis)**
+
+
+- pré / post traitement =  ensemble d'outils (utilisés par les chercheurs) qui permettent de traiter les infos calculées par l'appli ; ces étapes ne font pas parti de l'appli mais permettent d'en faciliter la lecture et l'exploitation !
+
+- pré-traitement = configuration du moteur de simulation
+- post-traitement = exploitation des données calculées par le moteur de simulation
+
+_____
+Aprèm
+
+-
+-
+-
+-
+-
+
+
