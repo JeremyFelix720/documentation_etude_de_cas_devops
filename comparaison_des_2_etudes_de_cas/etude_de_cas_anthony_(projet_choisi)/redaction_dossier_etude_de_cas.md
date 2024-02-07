@@ -144,18 +144,61 @@ Pour remédier à ces problèmes, la solution serait donc :
   - échange de connaissances et de techniques permanent pour prendre en compte la transversalité des projets
 
 
-- Embaucher des développeurs salariés (avec une vraie expertise) à la place de stagiaires (qui manquent souvent d'expérience) pour augmenter significativement la qualité du code produit ainsi que la notoriété de l'entreprise.
+- Puisque l’entreprise a le budget pour recruter et qu'elle est en pleine croissance interne, il faudrait embaucher des développeurs salariés (avec une vraie expertise) à la place de stagiaires (qui manquent souvent d'expérience) pour augmenter significativement la qualité du code produit ainsi que la notoriété de l'entreprise.
+
+
+- Il aussi faudrait en place un réseau social professionnel pour permettre aux collaborateurs de faire appel les uns aux autres en cas de problème, de faciliter des micro-interventions entre collaborateurs sur des projets précis de façon plus souple (à n'importe quel moment) et pour partager des documents à des personnes en privé (si ce n'est pas pertinent que tout le monde soit au courant de l'avancement d'un travail en cours de réalisation). Sur le marché des applications, il y a par exemples :
+  1. Slack
+  2. Quora
+  3. Discord
+
+1. Je recommande fortement d'utiliser Slack dont les principaux avantages sont :
+- La connexion à de nombreuses applications telles que Google Drive, Trello et Dropbox (ce qui accélère le flux de travail et la productivité) ou encore la connexion à Jira, qui permet aux équipes d’automatiser le processus d’intégration et de déploiement continus CI/CD (ainsi, tout collaborateur peut vérifier l’état du code, visualiser les structures et les déploiements, mais aussi découvrir ce qui est mis en ligne, directement en un seul et même espace)
+- La collaboration en temps réel (ce qui facilite la collaboration entre des équipes à présentes en interne comme à l'internationnal)
+- La centralisation des informations de l'équipe (avec un archivage des messages et des documents ainsi que des recherches avancées pour trouver rapidement les informations recherchées)
+- Des canaux de communication organisés par sujet (ce qui facilite l'interaction entre les équipes et la recherche de conversations passées)
+- Un haut niveau de cryptage qui répond aux normes de sécurité les plus rigoureuses (ce qui garantie la protection des informations de l'entreprise)
+
+2. Les principaux avantages de Quora sont :
+- L'échange d'informations qui dépassent la simple recherche pour intégrer l'expertise humaine et les expériences personnelles, enrichissant ainsi la compréhension sur une multitude de sujets spécifiques (forum par question/réponse)
+- La possibilité de trouver des informations spécifiques et des opinions variées sur des sujets de niche
+- Le système de votes positifs et des commentaires qui renforcent la réputation et crédibilité des réponses données par les experts qui comprennent vraiment les sujets abordés (le site met automatiquement en avant les réponses les plus utiles pour les utilisateurs)
+- Son utilisation comme un execellent outil de brainstorming (pour favoriser l'intelligence collective entre les colaborateurs)
+
+3. Les principaux avantages de Discord sont :
+- Son interface intuitive et conviviale qui permet aux utilisateurs de naviguer et de communiquer facilement au sein de la plateforme
+- sa polyvalence qui peut être utilisé par des groupes d'étude et des collaborations professionnelles
+- Ses canaux textuels et vocaux (communication par le biais de messages textuels ou d'appels vocaux, ce qui permet de tenir compte des différentes préférences en matière de communication)
+- Son haut degré de personnalisation par les propriétaires de serveur (ce qui leur permet de créer et de concevoir des canaux, des rôles et des autorisations adaptés aux besoins de leur communauté)
+- L'intégration possible à plusieurs autres plateformes et services, notamment Twitch, YouTube, Spotify, etc. (il est ainsi facile de partager et d'apprécier le contenu dans l'environnement Discord)
+- Sa gratuité d'utilisation de Discord avec de nombreuses fonctionnalités accessibles sans abonnement (il s'agit donc d'une option intéressante pour les communautés dont le budget est limité)
+- Ses fonctions de sécurité telles que l'authentification à deux facteurs, le cryptage des messages et la possibilité de définir des paramètres de confidentialité pour les serveurs
+
+
+## ALEGEMENT DE LA CHARGE DE TRAITEMENT
+
+Sur le long terme, on peut envisager une découpe du moteur de simulation monolythique en microservices indépendants mais cela demanderait un travail très conséquent et qu'il ne s'agit pas là du besoin exprimé par SIBIS.
+
+Afin de décharger le moteur de simulation monolythique de certaines responsabilités, il serait préférable de créer d'autres services (ou programmes).
+
+**VEILLE SUR GATEWAY**
+
+
+
+## 
+
+A l'heure actuelle, il n'y a ni chaine d'outils automatisés, ni 
+
+> Schéma CI
+
 
 
 ___
 
+
 ## REPONSES AUX QUESTIONS POUR LA PROPOSITION DE SOLUTION (il est possible de rajouter d'autres questions)
 
-Sur le long terme, on peut envisager une découpe du simulateur monolythique en microservices indépendants mais cela demanderait un travail trop conséquent et qu'il ne s'agit pas du besoin exprimé par SIBIS.
-
-
-Afin de décharger le moteur de simulation monolythique de certaines responsabilités, il serait préférable de créer d'autres services (ou programmes).
-
+**Pas obligé d'y répondre à toutes**
 
 ___
 
@@ -264,4 +307,10 @@ https://www.reussirsesprojets.com/avantages-methodes-agiles/
 
 https://solutions.lesechos.fr/bureau-coworking/c/les-avantages-et-inconvenients-de-lopen-space-7695/
 
+https://tecnobits.com/fr/cuales-son-las-principales-ventajas-de-slack/
 
+https://slack.com/intl/fr-fr/resources/why-use-slack/the-value-of-slack-for-software-developers
+
+https://www.sales-hacking.com/outils/quora
+
+https://barrazacarlos.com/fr/avantages-et-inconvenients-de-la-discorde/
