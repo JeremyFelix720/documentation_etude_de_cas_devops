@@ -75,6 +75,9 @@ Voici un comparatifs des moteurs graphiques leaders sur le marché que j'ai trou
 
 ### RESTRUCTURATION DE L'EQUIPE EN MODE AGILE
 
+
+___
+
 - Mettre en place un cadre de travail orienté "Agile" pour augmenter la performance d'une équipe ; Voici ses 12 principes fondateurs à intégrer dans les processus de l'entreprise SIBIS :
   - Livrer de la valeur au client
   - Intégrer les demandes de changement
@@ -108,6 +111,7 @@ Voici quelques uns des avantages à utiliser l'Agilité en entreprise :
 - Les risques sont diminués
 - On peut arrêter le projet à tout moment
 
+___
 
 - Favoriser une meilleure communication entre les deux bureaux qui ont la même configuration (équipe de chercheurs spécialisé dans un domaine spécifique) en mettant à disposition un open space qui consiste à réunir des bureaux dans un espace ouvert et sans cloisons.
 
@@ -118,6 +122,7 @@ L'open space est un modèle économique qui comporte de nombreux avantages :
   - meilleure cohésion et communication entre les équipes (pour favoriser les échanges directs plus rapide et efficaces ; par exemple, entre les équipes scientifiques techniques et les responsables de la mise en production)
   - augmentation de la réactivité (en cas de problème technique, de pic d’activité ou lorsqu'un projet se dessine, il est aisé de rassembler une équipe soudée dans un petit périmètre)
   - réduction de la superficie nécessaire pour accueillir le même nombre de salarié (ce qui permet de baisser les charges en matière de loyer)
+  - atténuation de la forte séparation qui existe actuellement entre les équipes scientifiques techniques et les responsables de la mise en production
 
 Il y a néanmoins quelques inconvénients à l'open space qu'il est bien d'évoquer :
   - impression d'être constamment surveillé (générant un stress supplémentaire)
@@ -127,22 +132,24 @@ Voici quelques conseils pour la mise en place d'un open space :
   - prévoir une salle de repos et une salle de réunion dans des pièces indépendantes (suffisament à l'écart de l'open space)
   - instaurer des règles de vie commune (pour favoriser le respect mutuel entre les colaborateurs)
 
-
-- "forte séparation entre les équipes scientifiques techniques et les responsables de la mise en production"
-
+___
 
 - Pour le moment, il n'y a au moins 2 problèmes qui nuisent à la communication permanente et qui empechent l'inteligence collective
-  - les réunions hebdomadaires pendant lesquelles les colaborateurs abordent tour à tour les travaux effectués durant la semaine précédente et ceux envisagés pour la semaine actuelle ne donnent pas l'occasion à chacun individuelement de rentrer dans le détail de leur recherches respectives, ni ne s'organiser en équipe pour travailler ensemble sur un même projet
+  - les réunions hebdomadaires pendant lesquelles les colaborateurs abordent tour à tour les travaux effectués durant la semaine précédente et ceux envisagés pour la semaine actuelle ne donnent pas l'occasion à chacun individuelement de rentrer dans le détail de leur recherches respectives, ni ne s'organisent en équipe pour travailler ensemble sur un même projet ou une même tache
   - Le travail est fractionné en fonction de la taille des projets (pour une personne aux connaissances pointues dans un domaine donné) ; ce qui implique que chaque membre est cloisonné dans sa spécialité (autrement dit, il s'agit d'une organisation en silo qui n'est pas compatible avec la méthodologie de travail Agile)
 
 Pour remédier à ces problèmes, la solution serait donc :
 - d'ajouter au bilan hebodomaire existant la méthode Agile du "Daily scrum" (consistant à organiser une brève réunion quotidienne concernant uniquement les membres de l’entreprise travaillant sur le sprint) afin d'avoir un horizon à court terme du travail à réaliser, de façon précise et concrète.
-- Utiliser l'ordi comme un outil de communication et pas simplement comme un outil de calculs mathématiques en encourageant tous les chercheurs et les développeurs à partager leur travail sur git et gitHub en leur expliquant tout l'intéret qu'il y a à le faire :
-  - retour en arrière facile
-  - versionning de son projet avec l'historique des commits
-  - sauvegarde permanente sur un répertoire distant
-  - échange de connaissances et de techniques permanent pour prendre en compte la transversalité des projets
+- Utiliser l'ordinateur comme un outil de communication et pas simplement comme un outil de calculs mathématiques en encourageant tous les chercheurs et les développeurs à partager leur travail sur un outil de versionning en leur expliquant tout l'intéret qu'il y a à le faire.
 
+Je recommende fortement à tous les colaborateurs (y compris les develloppeurs) d'utiliser Git et GitHub dont les avantages sont les suivants :
+- Leader sur le marché des clouds dédiés au code informatique,
+- Partage du code, des connaissances et des techniques pour prendre en compte la transversalité des projets
+- Code source des projets hébergé dans différents langages de programmation (les autres utilisateurs de GitHub peuvent passer en revue le code et proposer des modifications ou des améliorations)
+- Retour en arrière facile en cas d'erreur
+- Accès à l'historique des commits (les changements apportés à chaque itération sont gardés en mémoire)
+
+___
 
 - Puisque l’entreprise a le budget pour recruter et qu'elle est en pleine croissance interne, il faudrait embaucher des développeurs salariés (avec une vraie expertise) à la place de stagiaires (qui manquent souvent d'expérience) pour augmenter significativement la qualité du code produit ainsi que la notoriété de l'entreprise.
 
@@ -306,6 +313,8 @@ https://blog-gestion-de-projet.com/manifeste-agile-valeurs-et-principes/#t-16215
 https://www.reussirsesprojets.com/avantages-methodes-agiles/
 
 https://solutions.lesechos.fr/bureau-coworking/c/les-avantages-et-inconvenients-de-lopen-space-7695/
+
+https://datascientest.com/github-tout-savoir
 
 https://tecnobits.com/fr/cuales-son-las-principales-ventajas-de-slack/
 
