@@ -158,5 +158,6 @@ ___
   > Réponse : Non, c'est une autre techno
 
 
-
+- Qu'est-ce qu'il faut mettre comme info dans le résumé en anglais ?
+  > C'est pour le titre CDA, pas pour l'étude de cas !
 
