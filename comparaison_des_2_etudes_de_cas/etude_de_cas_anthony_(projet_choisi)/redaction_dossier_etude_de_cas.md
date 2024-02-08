@@ -55,17 +55,29 @@ Il faut prévoir d'en acheter un pour le futur module de visualisation afin de :
 Le moteur fournit notamment des fonctions permettant de charger des fichiers dans différents formats, d'animer les modèles en fournissant uniquement le nom de l'animation et ainsi de suite, son but étant de simplifier au maximum le travail du concepteur du module de visualisation.
 
 Voici un comparatifs des moteurs graphiques que j'ai trouvés :
-1. Unity (Simulation) Pro
-2. Unity
-3. Unreal Engine 5
-4. Panda 3D
+1. Panda 3D
+2. Unity (Simulation) Pro
+3. Unity
+4. Unreal Engine 5
 
-Voici les avantages de Unity (Simulation) Pro que je recommande d'utiliser pour les raisons suivantes :
+
+1. Voici les avantages de Panda 3D que je recommande d'utiliser pour les raisons suivantes  :
+- Documentation complète
+- Communauté très active
+- Moteur open source et totalement gratuit (sans redevances, sans paiement de licence, ni enregistrement ni frais de quelque nature que ce soit, même pour un usage commercial) pour les jeux 3D en temps réel, les visualisations, les simulations, les expériences
+- Riche ensemble de fonctionnalités qui s’adapte facilement aux besoins spécifiques en matière de flux de travail et de développement
+- Très grande flexibilité (gestion flexible des actifs, création de techniques graphiques et pipelines de rendu personnalisés, etc.) et performance (avec un système de profilage sur le réseau pour comprendre quelles parties sont concernées pour chaque milliseconde du temps d'image)
+- Moteur multiplateforme (tolérance du matériel ancien et nouveau, déploiement de l'application sur toutes les platesformes prises en charge)
+- Noyau écrit en C++ portable (pour sa vitesse d'execution) et en Python (pour sa facilité d'utilisation)
+- Aucun passe-partout ni aucun code d'initialisation compliqué
+- Livré avec le moteur physique Bullet (bibliothèque intégrable à un programme qui permet la résolution des équations physiques)
+
+2. Voici les avantages de Unity (Simulation) Pro :
 - Coût de l'abonnement raisonnable : 115€/mois
 - Exécution de plusieurs scénarios avec une physique précise à n'importe quelle échelle, sur site ou dans un cloud privé
 - Pas de dépendances vis-à-vis des systèmes qui ne bénéficient pas de la simulation (ce qui permet d'accélèrer le flux de travail à chaque étape du cycle de développement)
 
-Voici les avantages de Unity :
+3. Voici les avantages de Unity :
 - Moteur de jeu le plus connu et le plus utilisé par les développeurs
 - Adapté pour des modules de réalité augmentée et les contenus de réalité virtuelle (avec des visuels de qualité proffessionnelle)
 - Possibilité de développer de projets complexes
@@ -78,19 +90,18 @@ Voici les avantages de Unity :
 - Grande variété d’outils ainsi que de nombreuses ressources 2D et 3D
 - Compatibilité multiplateforme (fonctionne avec sur Steam, macOS, iOS, Android, PC)
 
-Voici les avantages de Unreal Engine 5 :
-- Idéal pour la création de contenus de réalité virtuelle
+4. Voici les avantages de Unreal Engine 5 :
 - Plateforme de développement utilisable en version gratuite (sans limite de temps)
 - Un magasin d’actifs bien rempli
+- Communauté très active
 - Une documentation bien fournie
+- Idéal pour la création de contenus de réalité virtuelle
+- Intègration de nombreux outils dont pour proposer de superbes contenus et expériences en temps réel
+- Suréchantillonnage de haute qualité indépendamment de la plateforme (rendu dans une résolution beaucoup plus faible, mais avec des images de sortie dont la fidélité est équivalente à celle des images générées dans une résolution plus élevée)
+- Éclairage global dynamique et gestion des reflets
+- Environnements entièrement dynamiques avec une grande fidélité visuelle (et massivement détaillés)
+- Mondes ouverts plus grands et immersifs
 
-
-
-
-
-
-
-**(+ mettre les sources !)**
 
 
 ## METHODOLOGIE AGILE
@@ -358,9 +369,15 @@ ___
 
 ## BIBLIOGRAPHIE
 
+https://www.panda3d.org/
+
+https://www.panda3d.org/features/
+
 https://unity.com/fr/products/unity-simulation-pro
 
 https://foxform3d.com/18-bonnes-raisons-dutiliser-unity/
+
+https://www.unrealengine.com/fr/unreal-engine-5
 
 https://blog-gestion-de-projet.com/manifeste-agile-valeurs-et-principes/#t-1621593889298
 
