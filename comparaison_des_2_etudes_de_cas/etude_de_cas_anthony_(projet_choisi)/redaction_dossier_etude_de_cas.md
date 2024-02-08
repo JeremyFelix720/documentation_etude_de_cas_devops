@@ -256,15 +256,89 @@ Afin de décharger le moteur de simulation monolythique de certaines responsabil
 
 ## INTEGRATION CONTINUE
 
-A l'heure actuelle, il n'y a ni chaine d'outils automatisés, ni 
+A l'heure actuelle, le processus de production est archaïque (compilation et un déploiement manuels) ; il n'y a donc pas de chaine d'outils automatisés. De nombreuses taches récurentes doivent être opérées par l'équipe de développement à chaque nouvelle mise en production de l'application, engendrant une perte de temps considérable et un risque d'erreur non négligeable (puisque les tests non-plus ne sont pas automatisés).
 
-- "Processus de Production Archaïque (compilation et un déploiement manuels)"
-- "Absence de Tests Automatisés"
-  - situation actuelle : de nombreuses taches récurentes doivent être opérées par l'équipe de développement à chaque nouvelle mise en production de l'application (les tests et le deploiment), engendrant une perte de temps considérable et un risque d'erreur non négligeable
-  - solution : opter pour de l'intégration continue pour conditionner la **dockerisation** à la **validation des tests** (grâce) et de l'absence d'erreurs statiques ou dynamiques (grâce à un Linter et un debuggeur) ; un système devra ensuite récupérer l'image dockérisée puis la mettre en production automatiquement (sur un hébergeur de projets en ligne) 
-
+Pour répondre à cette problématique, je suggère d'opter pour de l'intégration continue afin d'automatiser toutes les taches récurrente. Voici un schéma qui résume ce concept :
 
 > Schéma CI
+
+Les intérêts de faire de l'intégration continue sont multiples :
+- Le développement est plus rapide (notamment grâce aux indications de débogage automatisés qui permettent de fixer les bugs plus rapidement)
+- Le débogage est plus facile (car le nombre de ligne on peut localiser plus précisement un bug dans le code source de l'équipe si la mise en commun se fait régulièrement et automatiquement à chaque push)
+- Les coûts sont réduits car le nombre d’erreurs à chaque étape de developpement le sont également (comme les bugs sont isolés, identifiés et corrigés rapidement, les développeurs gagnent du temps, qui pourrait être consacré au développement du produit)
+- C'est plus simple d'apréhender des petits changements successifs plutôt que des gros changements ponctuels (diminuant ainsi les chances d’un conflit lors de la fusion, facilitant la maintenance et rendant les mises à jour plus faciles)
+
+
+### ETAPES DE L'INTEGRATION CONTINUE
+
+
+
+Voici une liste de taches effectuées soit manuellement (par le develloppeur), soit automatiquement (par la chaine d'outils) où chaque tache est conditionnée à la validation et à l'achèvement de la tache précédente :
+
+1. Après avoir avancé sur sa branche de fonctionnalié, le developpeur fait un commit en local (début de l'intégration continue locale)
+
+2. Pré-commit hook qui peut être configuré pour conditionner le commit à :
+  - L'absence d'erreurs statiques grâce à un linter (pour éviter les disparités des pratiques de travail et des conventions de codage au sein de l'équipe de developpeurs)
+  - L'absence d'erreurs dynamiques grâce à la validation des tests unitaires (pour s'assurer que les algorithmes donnent bien des résultats cohérents avec divers paramètres en entrée)
+
+3. Le développeur pousse sa branche de fonctionnalité sur un répertoire distant (début de la l'intégration continue distante)
+
+Via un fichier de type yalm dans la rubrique "GitHub Action", un deuxième contrôle peut être effectué (au cas où un develloppeur ait desinstallé le pré-commit sur sa machine) avec :
+  - L'absence d'erreurs statiques grâce à un linter
+  - L'absence d'erreurs dynamiques grâce à la validation des tests unitaires
+
+4. Dockerisation de l'application
+
+5. Code Review / Pull Request (pour s'assurer en équipe de la qualité du code produit)
+
+6. Déploiement / Mise en production, uniquement lorsqu'il y a un fusion avec la branche principale (début du déploiement continu)
+
+
+### VEILLES SUR LES OUTILS DE L'INTEGRATION CONTINUE
+
+> Peut-être le mettre uniquement dans l'autre dossier ?
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils de pré-commit :
+1. Husky
+2. 
+
+Voici les avantages de Husky :
+-
+-
+-
+-
+
+
+
+
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs linters :
+- EsLint + Prettier (formatage du )
+- 
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils de testing :
+- Vitest
+- Jest
+- etc.
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils dockerisation :
+  - Docker
+  -
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils de déploiement :
+  - Versel
+  - etc.
+
 
 
 
@@ -295,43 +369,6 @@ ___
 ___
 
    - Quelles étapes spécifiques doivent être automatisées pour garantir un processus CI/CD fiable ?
-
-Les intérêts de faire de l'intégration continue sont multiples :
-- 
-- 
-- 
-- 
-- 
-- 
-
-Pour garantir une meilleure qualité de code, il faut mettre en place un outil de testing pour vérifier, par le biais de tests unitaires, que les algorithmes donnent bien des résultats cohérents avec différents paramètres en entrée. Voici une comparaison entre plusieurs outils de testing :
-- Vitest
-- Jest
-- etc.
-
-Pour mettre fin aux disparités dans les pratiques de travail et les conventions de codage au sein de l'équipe de developpeur, il faut mettre en place un linter qui a pour but de détecter les erreurs statiques. Voici une comparaison entre plusieurs Linters :
-- EsLint
-- 
-
-Pour (...)
-> Veille sur les Débuggeurs (pour détecter les erreurs dynamiques) ?
-  -
-  -
-
-Pour (...)
-> Veille sur les outils de dockerisation ?
-  - Docker
-  -
-
-Pour (...)
-> Utilisation de GitHub Action ?
-  -
-  -
-
-Pour (...)
-> Veille sur les outils de déploiement ?
-  - Versel
-  - etc.
 
 ___
 
@@ -398,3 +435,5 @@ https://slack.com/intl/fr-fr/resources/why-use-slack/the-value-of-slack-for-soft
 https://www.sales-hacking.com/outils/quora
 
 https://barrazacarlos.com/fr/avantages-et-inconvenients-de-la-discorde/
+
+https://www.codeur.com/blog/avantages-methode-dintegration-continue/
