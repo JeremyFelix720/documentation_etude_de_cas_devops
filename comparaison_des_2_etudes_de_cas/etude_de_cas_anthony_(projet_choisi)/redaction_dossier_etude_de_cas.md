@@ -1,9 +1,11 @@
-# REDACTION DE L'ETUDE DE CAS
+# ETUDE DE CAS POUR AMELIORER LE DEVOPS DE L'ENTREPRISE SIBIS
 
 
 ## INTRODUCTION
 
 L'entreprise SIBIS ("Simulation of Interaction between Broken Ice and Structures") a conçu un simulateur d'opérations navales dans les mers de glaces afin d'éviter de mettre en jeu des ressources matérielles coûteuses pour optimiser la navigation de brise-glaces et de super-tanqueurs par d'autres entreprises qui font appel à leurs services.
+
+___
 
 Voici un schéma qui représente le fonctionnement actuel du système de simulation dans sa globalité :
 
@@ -13,7 +15,11 @@ Voici un schéma qui représente le fonctionnement actuel du système de simulat
 
 - Ajouté à cela, il y a des outils supplémentaires (connectés à la l'application principale) utilisés par les chercheurs pour traiter les infos calculées par le moteur de simulation ; le pré-traitement gère la configuration du moteur de simulation et le post-traitement gère l'exploitation des données calculées par le moteur de simulation (notamment pour en faciliter la lecture).
 
-L'application a vocation a être utilisé sur un ordinateur et les languages utilisés actuellement sont C++ et MatLab.
+___
+
+L'application a vocation a être utilisé sur un ordinateur exclusivement et les languages utilisés actuellement sont C++ et MatLab.
+
+___
 
 Voici quelques captures d'écran qui mettent en évidence des exemples de rendus produits actuelement par le moteur de simulation de l'application : 
 
@@ -34,79 +40,19 @@ Voici quelques captures d'écran qui mettent en évidence des exemples de rendus
 
 ## OBJECTIF VISE
 
-L'objectif principal visé par SIBIS est d'offrir une représentation plus esthétique des données calculées pour améliorer la visualisation des différents scenarios de navigation possible par les bateaux sans pour autant alterer la performance des calculs.
+L'objectif principal visé par SIBIS est d'offrir une représentation plus esthétique des données calculées pour améliorer la visualisation des différents scenarios de navigation possibles par les bateaux sans pour autant alterer la performance des calculs.
 
 ## MES MISSIONS 
 
-Dans le cadre d'une étude de cas fictive, j'ai été missionné pour :
-1. rédiger un rapport pour comparer les technologies les plus adaptées pour le moteur graphique.
-2. commencer la conception du module de visualisation.
-3. améliorer le workflow, des dépôts et de la qualité du code en y ajoutant une chaîne de CI/CD automatisée (dans un second temps)
-
-## VEILLE SUR LES MOTEURS GRAPHIQUES 3D
-
-Un moteur 3D est un composant logiciel qui crée des images matricielles à partir de coordonnées tridimensionnelles.
-
-Il faut prévoir d'en acheter un pour le futur module de visualisation afin de :
-- rendre les textures des blocs de glace plus réaliste (avec l'ajout de luminosité et des ombres)
-- faciliter le codage (à l'aide de libraries)
-- Augmenter la rapidité d'affichage
-
-Le moteur fournit notamment des fonctions permettant de charger des fichiers dans différents formats, d'animer les modèles en fournissant uniquement le nom de l'animation et ainsi de suite, son but étant de simplifier au maximum le travail du concepteur du module de visualisation.
-
-Voici un comparatifs des moteurs graphiques que j'ai trouvés :
-1. Panda 3D
-2. Unity (Simulation) Pro
-3. Unity
-4. Unreal Engine 5
-
-
-1. Voici les avantages de Panda 3D que je recommande d'utiliser pour les raisons suivantes  :
-- Documentation complète
-- Communauté très active
-- Moteur open source et totalement gratuit (sans redevances, sans paiement de licence, ni enregistrement ni frais de quelque nature que ce soit, même pour un usage commercial) pour les jeux 3D en temps réel, les visualisations, les simulations, les expériences
-- Riche ensemble de fonctionnalités qui s’adapte facilement aux besoins spécifiques en matière de flux de travail et de développement
-- Très grande flexibilité (gestion flexible des actifs, création de techniques graphiques et pipelines de rendu personnalisés, etc.) et performance (avec un système de profilage sur le réseau pour comprendre quelles parties sont concernées pour chaque milliseconde du temps d'image)
-- Moteur multiplateforme (tolérance du matériel ancien et nouveau, déploiement de l'application sur toutes les platesformes prises en charge)
-- Noyau écrit en C++ portable (pour sa vitesse d'execution) et en Python (pour sa facilité d'utilisation)
-- Aucun passe-partout ni aucun code d'initialisation compliqué
-- Livré avec le moteur physique Bullet (bibliothèque intégrable à un programme qui permet la résolution des équations physiques)
-
-2. Voici les avantages de Unity (Simulation) Pro :
-- Coût de l'abonnement raisonnable : 115€/mois
-- Exécution de plusieurs scénarios avec une physique précise à n'importe quelle échelle, sur site ou dans un cloud privé
-- Pas de dépendances vis-à-vis des systèmes qui ne bénéficient pas de la simulation (ce qui permet d'accélèrer le flux de travail à chaque étape du cycle de développement)
-
-3. Voici les avantages de Unity :
-- Moteur de jeu le plus connu et le plus utilisé par les développeurs
-- Adapté pour des modules de réalité augmentée et les contenus de réalité virtuelle (avec des visuels de qualité proffessionnelle)
-- Possibilité de développer de projets complexes
-- Plateforme de développement utilisable en version gratuite (sans limite de temps)
-- Un magasin d’actifs bien rempli
-- Une documentation bien fournie
-- Communauté très active
-- Interface plus accessible à tous
-- Possibilité de passer par l’IDE intégré de Unity pour générer du code manuelement avec un script rapide et simple
-- Grande variété d’outils ainsi que de nombreuses ressources 2D et 3D
-- Compatibilité multiplateforme (fonctionne avec sur Steam, macOS, iOS, Android, PC)
-
-4. Voici les avantages de Unreal Engine 5 :
-- Plateforme de développement utilisable en version gratuite (sans limite de temps)
-- Un magasin d’actifs bien rempli
-- Communauté très active
-- Une documentation bien fournie
-- Idéal pour la création de contenus de réalité virtuelle
-- Intègration de nombreux outils dont pour proposer de superbes contenus et expériences en temps réel
-- Suréchantillonnage de haute qualité indépendamment de la plateforme (rendu dans une résolution beaucoup plus faible, mais avec des images de sortie dont la fidélité est équivalente à celle des images générées dans une résolution plus élevée)
-- Éclairage global dynamique et gestion des reflets
-- Environnements entièrement dynamiques avec une grande fidélité visuelle (et massivement détaillés)
-- Mondes ouverts plus grands et immersifs
-
+Dans le cadre de cette étude de cas fictive, j'ai été missionné pour :
+1. Rédiger un rapport qui doit comparer les technologies les plus adaptées pour le moteur graphique
+2. Commencer la conception du module de visualisation
+3. Améliorer le workflow, des dépôts et de la qualité du code en y ajoutant une chaîne de CI/CD automatisée (dans un second temps)
 
 
 ## METHODOLOGIE AGILE
 
-Mettre en place des méthodes de travail orientées "Agile" pour augmenter la performance d'une équipe ; Voici ses 12 principes fondateurs à intégrer dans les processus de l'entreprise SIBIS :
+Mettre en place des méthodes de travail orientées "Agile" pour augmenter la performance d'une équipe ; voici les 12 principes fondateurs de cette méthodologie qu'il serait intérressant d'intégrer dans les processus de l'entreprise SIBIS :
 - Livrer de la valeur au client
 - Intégrer les demandes de changement
 - Livrer fréquemment une version opérationnelle 
@@ -141,13 +87,12 @@ On peut aussi citer les avantages suivants à utiliser l'Agilité (de façon plu
 - L'agilité réduit le "time-to-market" (temps de mise sur le marché d'un produit ou service)
 - On peut arrêter le projet à tout moment
 
-___
 
 ## CADRE DE TRAVAIL
 
 Favoriser une meilleure communication entre les deux bureaux qui ont la même configuration (équipe de chercheurs spécialisé dans un domaine spécifique) en mettant à disposition un open space qui consiste à réunir des bureaux dans un espace ouvert et sans cloisons.
 
-Le problème est que la configuration actuelle des locaux loués par SIBUS ne sont pas adaptés à l'open space car toutes les salles sont déjà occupées par des colaborateurs. Puisque le batiment est loué, il n'est pas envisageable de casser des cloisons. La solution restante est que l'entreprise SIBIS démenage dans d'autres locaux plus adaptés à l'open space.
+Le problème est que la configuration actuelle des locaux loués par SIBUS ne sont pas adaptés à l'open space car toutes les salles sont déjà occupées par des colaborateurs. Puisque le batiment est loué, il n'est pas envisageable de casser des cloisons. La solution restante serait donc que l'entreprise SIBIS démenage dans d'autres locaux plus adaptés à l'aménagement d'un open space.
 
 L'open space est un modèle économique qui comporte de nombreux avantages :
   - Environnement favorable pour la mise en place des méthodologies Agile
@@ -164,7 +109,6 @@ Voici quelques conseils pour la mise en place d'un open space :
   - Prévoir une salle de repos et une salle de réunion dans des pièces indépendantes (suffisament à l'écart de l'open space)
   - Instaurer des règles de vie commune (pour favoriser le respect mutuel entre les colaborateurs)
 
-___
 
 ## GESTION DE PROJET
 
@@ -173,7 +117,8 @@ Afin d'organiser et de répartir le travail au sein d'une équipe pour un projet
 2. Trello 
 
 Voici les avantages de Monday :
-- Interface conviviale (ce qui permet aux membres de l'équipe de démarrer relativement facilement et d'utiliser le logiciel de manière efficace. Il ne nécessite qu'une formation minimale)
+- Interface conviviale (ce qui permet aux membres de l'équipe d'utiliser le logiciel de manière efficace) 
+- Ne nécessite qu'une formation minimale pour pouvoir s'en servir de façon optimisée
 - Création et personnalisation des flux de travail, tableaux et tableaux de bord (ce qui permet d'adapter le logiciel à leurs besoins uniques en matière de gestion de projet)
 - Approche visuelle et intuitive, avec des tableaux, des cartes et des calendriers codés par couleur (ce qui facilite le suivi des progrès et des délais d'un seul coup d'œil)
 - Collaboration au sein de l'équipe en proposant des fonctionnalités telles que l'attribution de tâches, les commentaires, les pièces jointes et les notifications (ce qui permet de rationaliser la communication et de faire en sorte que tout le monde soit sur la même longueur d'onde)
@@ -189,27 +134,27 @@ Voici les avantages de Trello :
 - Projets personnalisables avec de nouveaux aspects à mesure que l'équipe s’agrandit (qui peut même comprendre des centaines de collaborateurs)
 - Disponible sur diverses plateformes, y compris les appareils mobiles
 
-___
 
 ## COMMUNICATION EN INTERNE
 
 Pour le moment, il n'y a au moins 2 problèmes qui nuisent à la communication permanente et qui empechent l'inteligence collective
-  - les réunions hebdomadaires pendant lesquelles les colaborateurs abordent tour à tour les travaux effectués durant la semaine précédente et ceux envisagés pour la semaine actuelle ne donnent pas l'occasion à chacun individuelement de rentrer dans le détail de leur recherches respectives, ni ne s'organisent en équipe pour travailler ensemble sur un même projet ou une même tache
-  - Le travail est fractionné en fonction de la taille des projets (pour une personne aux connaissances pointues dans un domaine donné) ; ce qui implique que chaque membre est cloisonné dans sa spécialité (autrement dit, il s'agit d'une organisation en silo qui n'est pas compatible avec la méthodologie de travail Agile)
+- Les réunions hebdomadaires (pendant lesquelles les colaborateurs abordent tour à tour les travaux effectués durant la semaine précédente et ceux envisagés pour la semaine actuelle) ne donnent pas l'occasion à chacun individuelement de rentrer dans le détail de leur recherches respectives, ni de s'organiser en équipe pour travailler ensemble sur un même projet ou une même tâche
+- Le travail est fractionné en fonction de la taille des projets (pour une personne aux connaissances pointues dans un domaine donné) ; ce qui implique que chaque membre est cloisonné dans sa spécialité (autrement dit, il s'agit d'une organisation en silo qui n'est pas compatible avec la méthodologie de travail Agile)
 
 Pour remédier à ces problèmes, la solution serait donc :
-- d'ajouter au bilan hebodomaire existant la méthode Agile du "Daily scrum" (consistant à organiser une brève réunion quotidienne concernant uniquement les membres de l’entreprise travaillant sur le sprint) afin d'avoir un horizon à court terme du travail à réaliser, de façon plus précise et concrète.
-- Utiliser l'ordinateur comme un outil de communication et pas simplement comme un outil de calculs mathématiques en encourageant tous les chercheurs et les développeurs à partager leur travail sur un outil de versionning en leur expliquant tout l'intéret qu'il y a à le faire.
+- D'ajouter au bilan hebodomaire existant la méthode Agile du "Daily scrum" (consistant à organiser une brève réunion quotidienne - généralement le matin en arrivant - concernant uniquement les membres de l’entreprise travaillant sur le sprint) afin d'avoir un horizon à court terme du travail à réaliser, de façon plus précise et plus concrète.
+- D'utiliser l'ordinateur comme un outil de communication, et pas simplement comme un outil de calculs mathématiques, en encourageant tous les chercheurs et les développeurs à utiliser un outil de versionning en local puis de partager leur travail sur des répertoires communs sur le cloud.
 
-Je recommende fortement à tous les colaborateurs (y compris les develloppeurs) d'utiliser Git et GitHub dont les avantages sont les suivants :
-- Leader sur le marché des clouds dédiés au code informatique,
-- Partage du code, des connaissances et des techniques pour prendre en compte la transversalité des projets
-- Code source des projets hébergé dans différents langages de programmation (les autres utilisateurs de GitHub peuvent passer en revue le code et proposer des modifications ou des améliorations)
-- Retour en arrière facile en cas d'erreur
-- Accès à l'historique des commits (les changements apportés à chaque itération sont gardés en mémoire)
+Je recommende donc fortement à tous les colaborateurs (y compris les develloppeurs) d'utiliser Git ainsi que GitHub dont les avantages sont les suivants :
+- C'est le leader sur le marché des clouds dédiés au code informatique,
+- Il permet de partager du code, des connaissances et des techniques pour prendre en compte la transversalité des projets
+- Le code source des projets est hébergé dans différents langages de programmation (les autres utilisateurs de GitHub peuvent passer en revue le code et proposer des modifications ou des améliorations)
+- Le retour en arrière facile en cas d'erreur
+- Il est possible d'accéder à l'historique de l'ensemble des commits pour un même projet (les changements apportés à chaque itération sont sauvegardés en mémoire)
 
+___
 
-Il aussi faudrait en place un réseau social professionnel pour permettre aux collaborateurs de faire appel les uns aux autres en cas de problème, de faciliter des micro-interventions entre collaborateurs sur des projets précis de façon plus souple (à n'importe quel moment) et pour partager des documents à des personnes en privé (si ce n'est pas pertinent que tout le monde soit au courant de l'avancement d'un travail en cours de réalisation). Sur le marché des applications, il y a par exemples :
+Il faudrait aussi en place un réseau social professionnel pour permettre aux collaborateurs de faire appel les uns aux autres en cas de problème, de faciliter des micro-interventions entre eux sur des projets précis de façon plus souple (à n'importe quel moment) et afin de partager des documents à des personnes en privé (si ce n'est pas pertinent que tout le monde soit au courant de l'avancement d'un travail en cours de réalisation). Sur le marché des applications, il y a par exemples :
 1. Slack
 2. Quora
 3. Discord
@@ -224,197 +169,136 @@ Il aussi faudrait en place un réseau social professionnel pour permettre aux co
 2. Les principaux avantages de Quora sont :
 - L'échange d'informations qui dépassent la simple recherche pour intégrer l'expertise humaine et les expériences personnelles, enrichissant ainsi la compréhension sur une multitude de sujets spécifiques (forum par question/réponse)
 - La possibilité de trouver des informations spécifiques et des opinions variées sur des sujets de niche
-- Le système de votes positifs et des commentaires qui renforcent la réputation et crédibilité des réponses données par les experts qui comprennent vraiment les sujets abordés (le site met automatiquement en avant les réponses les plus utiles pour les utilisateurs)
+- Le système de votes positifs et des commentaires qui renforcent la réputation et crédibilité des réponses données par les experts qui comprennent vraiment les sujets abordés (le site met automatiquement en avant les réponses les plus utiles pour les utilisateurs de Quora)
 - Son utilisation comme un execellent outil de brainstorming (pour favoriser l'intelligence collective entre les colaborateurs)
 
 3. Les principaux avantages de Discord sont :
-- Son interface intuitive et conviviale qui permet aux utilisateurs de naviguer et de communiquer facilement au sein de la plateforme
-- sa polyvalence qui peut être utilisé par des groupes d'étude et des collaborations professionnelles
+- Son interface intuitive et conviviale (qui permet aux utilisateurs de naviguer et de communiquer facilement au sein de la plateforme)
+- sa polyvalence (qui peut être utilisé par des groupes d'étude et des collaborations professionnelles)
 - Ses canaux textuels et vocaux (communication par le biais de messages textuels ou d'appels vocaux, ce qui permet de tenir compte des différentes préférences en matière de communication)
 - Son haut degré de personnalisation par les propriétaires de serveur (ce qui leur permet de créer et de concevoir des canaux, des rôles et des autorisations adaptés aux besoins de leur communauté)
 - L'intégration possible à plusieurs autres plateformes et services, notamment Twitch, YouTube, Spotify, etc. (il est ainsi facile de partager et d'apprécier le contenu dans l'environnement Discord)
-- Sa gratuité d'utilisation de Discord avec de nombreuses fonctionnalités accessibles sans abonnement (il s'agit donc d'une option intéressante pour les communautés dont le budget est limité)
+- Sa gratuité d'utilisation avec de nombreuses fonctionnalités accessibles sans abonnement (il s'agit donc d'une option intéressante pour les communautés dont le budget est limité)
 - Ses fonctions de sécurité telles que l'authentification à deux facteurs, le cryptage des messages et la possibilité de définir des paramètres de confidentialité pour les serveurs
 
-___
 
 ## RECRUTEMENT DE PERSONNEL
 
-Puisque l’entreprise a le budget pour recruter et qu'elle est en pleine croissance interne, il faudrait embaucher des développeurs salariés (avec une vraie expertise) à la place de stagiaires (qui manquent souvent d'expérience) pour augmenter significativement la qualité du code produit ainsi que la notoriété de l'entreprise.
+Puisque l’entreprise a le budget pour recruter et qu'elle est actuellement en pleine croissance interne, la solution la plus rationnelle serait d'embaucher des développeurs salariés (avec une vraie expertise) à la place de stagiaires (qui manquent souvent d'expérience qui sont remplacés régulièrement par d'autres stagiaire).
 
-___
+Cette option permettrait d'augmenter significativement la qualité du code produit, la stabilité du moteur de simulation dans la durée ainsi que la notoriété de l'entreprise.
+
 
 ## ALLEGEMENT DE LA CHARGE DE TRAITEMENT
 
-Sur le long terme, on peut envisager une découpe du moteur de simulation monolythique en microservices indépendants mais cela demanderait un travail très conséquent et qu'il ne s'agit pas là du besoin exprimé par SIBIS.
+Sur le long terme, on peut envisager une découpe du moteur de simulation monolythique en microservices indépendants grâce à un système de type "Gateway" (afin de décharger le moteur de certaines responsabilités qui sont suffisament différentes les unes des autres pour être séparées).
 
-Afin de décharger le moteur de simulation monolythique de certaines responsabilités, il serait préférable de créer d'autres services (ou programmes).
-
-**VEILLE SUR GATEWAY**
+Or, cette évolution demanderait un travail très conséquent pour l'équipe de dévelloppeurs (qui, pour rappel, n'est composée pour le moment que de stagiaires dont le contrat est temporaire par définition). De plus, il ne s'agit pas là du besoin exprimé par l'entreprise SIBIS dans l'attribution de mes responsabilités.
 
 
-
-## INTEGRATION CONTINUE
+## INTEGRATION CONTINUE / DEPLOIEMENT CONTINUE
 
 A l'heure actuelle, le processus de production est archaïque (compilation et un déploiement manuels) ; il n'y a donc pas de chaine d'outils automatisés. De nombreuses taches récurentes doivent être opérées par l'équipe de développement à chaque nouvelle mise en production de l'application, engendrant une perte de temps considérable et un risque d'erreur non négligeable (puisque les tests non-plus ne sont pas automatisés).
 
-Pour répondre à cette problématique, je suggère d'opter pour de l'intégration continue afin d'automatiser toutes les taches récurrente. Voici un schéma qui résume ce concept :
+Pour répondre à cette problématique, je suggère d'opter pour de l'intégration continue (partie "Dev" sur le schéma) ainsi que pour du déploiement continue (partie "Ops" sur le schéma) afin d'automatiser toutes les tâches récurrentes dans le develloppement et le déploiement de l'application. Voici un schéma qui résume ces 2 concepts combinés (avec les différents outils disponibles sur le marché pour chacune des étapes du DevOps) :
 
-> Schéma CI
+![DevOps](img/devops.jpg "DevOps")
 
-Les intérêts de faire de l'intégration continue sont multiples :
+Les intérêts de faire du DevOps dans le contexte d'une entreprise sont multiples :
 - Le développement est plus rapide (notamment grâce aux indications de débogage automatisés qui permettent de fixer les bugs plus rapidement)
-- Le débogage est plus facile (car le nombre de ligne on peut localiser plus précisement un bug dans le code source de l'équipe si la mise en commun se fait régulièrement et automatiquement à chaque push)
-- Les coûts sont réduits car le nombre d’erreurs à chaque étape de developpement le sont également (comme les bugs sont isolés, identifiés et corrigés rapidement, les développeurs gagnent du temps, qui pourrait être consacré au développement du produit)
-- C'est plus simple d'apréhender des petits changements successifs plutôt que des gros changements ponctuels (diminuant ainsi les chances d’un conflit lors de la fusion, facilitant la maintenance et rendant les mises à jour plus faciles)
+- Le débogage est plus facile (car le nombre de ligne à vérifier étant plus réduite grâce à la mise en commun régulière - à chaque "push" - et versionnée d'un projet, on peut localiser plus précisement un bug dans le code source de l'équipe)
+- Les coûts sont réduits car le nombre d’erreurs à chaque étape de developpement le sont également (comme les bugs sont isolés, identifiés et corrigés rapidement, les développeurs gagnent du temps, qui peut donc être consacré au développement du produit)
+- C'est plus simple d'apréhender des petits changements successifs plutôt que des gros changements ponctuels (cela diminue les risques de conflit lors de la fusion du code produit par un developpeur avec le code source commun et cela facilite aussi la maintenance & les mises à jour)
 
 
-### ETAPES DE L'INTEGRATION CONTINUE
+### ETAPES DE L'INTEGRATION CONTINUE ET DU DEPLOIEMENT CONTINUE
 
+Voici une liste de tâches effectuées soit manuellement (par le develloppeur), soit automatiquement (par la chaine d'outils) où chacune d'entre elles est conditionnée à la validation et à l'achèvement de la tâche précédente :
 
+1. Après avoir avancé sur sa branche de fonctionnalié, le developpeur fait un commit* pour sauvegarder son code en local (début de l'intégration continue locale)
 
-Voici une liste de taches effectuées soit manuellement (par le develloppeur), soit automatiquement (par la chaine d'outils) où chaque tache est conditionnée à la validation et à l'achèvement de la tache précédente :
+* L'outil de pré-commit hook peut être configuré pour conditionner le commit à :
+- L'absence d'erreurs statiques grâce à un linter (pour éviter les disparités des pratiques de travail et des conventions de codage au sein de l'équipe de developpeurs)
+- L'absence d'erreurs dynamiques grâce à la validation des tests unitaires (pour s'assurer que les algorithmes donnent bien des résultats cohérents avec divers paramètres en entrée)
 
-1. Après avoir avancé sur sa branche de fonctionnalié, le developpeur fait un commit en local (début de l'intégration continue locale)
-
-2. Pré-commit hook qui peut être configuré pour conditionner le commit à :
-  - L'absence d'erreurs statiques grâce à un linter (pour éviter les disparités des pratiques de travail et des conventions de codage au sein de l'équipe de developpeurs)
-  - L'absence d'erreurs dynamiques grâce à la validation des tests unitaires (pour s'assurer que les algorithmes donnent bien des résultats cohérents avec divers paramètres en entrée)
-
-3. Le développeur pousse sa branche de fonctionnalité sur un répertoire distant (début de la l'intégration continue distante)
+2. Le développeur pousse sa branche de fonctionnalité sur un répertoire distant (début de la l'intégration continue distante)
 
 Via un fichier de type yalm dans la rubrique "GitHub Action", un deuxième contrôle peut être effectué (au cas où un develloppeur ait desinstallé le pré-commit sur sa machine) avec :
-  - L'absence d'erreurs statiques grâce à un linter
-  - L'absence d'erreurs dynamiques grâce à la validation des tests unitaires
+- L'absence d'erreurs statiques grâce à un linter
+- L'absence d'erreurs dynamiques grâce à la validation des tests unitaires
 
-4. Dockerisation de l'application
+3. Dockerisation de l'application (construction de l'image, hébergement de l'image, mise en production de l'image transformée en conteneur)
 
-5. Code Review / Pull Request (pour s'assurer en équipe de la qualité du code produit)
+4. Code Review / Pull Request (pour s'assurer en équipe de la qualité du code produit et éventuellement repartir à l'étape de dévelloppement si besoin)
 
-6. Déploiement / Mise en production, uniquement lorsqu'il y a un fusion avec la branche principale (début du déploiement continu)
-
-
-### VEILLES SUR LES OUTILS DE L'INTEGRATION CONTINUE
-
-> Peut-être le mettre uniquement dans l'autre dossier ?
-
-#### VEILLE SUR 
-
-Voici une comparaison entre plusieurs outils de pré-commit :
-1. Husky
-2. 
-
-Voici les avantages de Husky :
--
--
--
--
+5. Déploiement / Mise en production, uniquement lorsqu'il y a une fusion avec la branche principale (début du déploiement continu)
 
 
+## VEILLE SUR LES MOTEURS GRAPHIQUES 3D
+
+Un moteur 3D est un composant logiciel qui crée des images matricielles à partir de coordonnées tridimensionnelles.
+
+Il faut prévoir d'en acheter un pour le futur module de visualisation afin de :
+- Rendre les textures des blocs de glace plus réalistes (avec l'ajout de luminosité et des ombres)
+- Faciliter le codage (à l'aide de librairies comprenant des assets prêts à l'emploi)
+- Augmenter la rapidité d'affichage
+
+Un moteur graphique fournit notamment des fonctions permettant de charger des fichiers dans différents formats, d'animer les modèles en fournissant uniquement le nom de l'animation et ainsi de suite, son but étant de simplifier au maximum le travail du concepteur du module de visualisation.
+
+Voici un comparatifs des moteurs graphiques que j'ai trouvés :
+1. Panda 3D
+2. Unity (Simulation) Pro
+3. Unity
+4. Unreal Engine 5
+
+1. Voici les avantages de Panda 3D que je recommande d'utiliser pour les raisons suivantes :
+- Sa documentation est complète
+- Sa communauté est très active
+- C'est un moteur open source et totalement gratuit (sans redevances, sans paiement de licence, ni enregistrement ni frais de quelque nature que ce soit, même pour un usage commercial) pour les jeux 3D en temps réel, les visualisations, les simulations, les expériences
+- Il est riche en fonctionnalités qui s’adapte facilement aux besoins spécifiques en matière de flux de travail et de développement
+- Il est doté d'une très grande flexibilité (gestion flexible des actifs, création de techniques graphiques et pipelines de rendu personnalisés, etc.) et performance (avec un système de profilage sur le réseau pour comprendre quelles parties sont concernées pour chaque milliseconde du temps d'image)
+- Il est multiplateforme (tolérance du matériel ancien et nouveau, déploiement de l'application sur toutes les platesformes prises en charge)
+- Son noyau écrit en C++ portable (pour sa vitesse d'execution) et en Python (pour sa facilité d'utilisation)
+- Il n'y a aucun passe-partout ni aucun code d'initialisation compliqué
+- Il est livré avec le moteur physique Bullet (bibliothèque intégrable à un programme qui permet la résolution des équations physiques)
+
+2. Voici les avantages de Unity (Simulation) Pro :
+- Le coût de l'abonnement est raisonnable : 115€/mois
+- Il est possible d'exécuter plusieurs scénarios avec une physique précise à n'importe quelle échelle, sur site ou dans un cloud privé
+- Il n'y a pas de dépendances vis-à-vis des systèmes qui ne bénéficient pas de la simulation (ce qui permet d'accélèrer le flux de travail à chaque étape du cycle de développement)
+
+3. Voici les avantages de Unity :
+- C'est le moteur de jeu le plus connu et le plus utilisé par les développeurs
+- Il est adapté pour des modules de réalité augmentée et les contenus de réalité virtuelle (avec des visuels de qualité proffessionnelle)
+- Il permet le développement de projets complexes
+- Sa plateforme de développement est utilisable en version gratuite (sans limite de temps)
+- Son magasin d’actifs est bien rempli
+- Sa documentation est complète
+- Sa communauté est très active
+- Son interface est accessible à tous
+- Il offre la possibilité de passer par l’IDE intégré de Unity pour générer du code manuelement avec un script rapide et simple
+- Il offre une grande variété d’outils ainsi que de nombreuses ressources 2D et 3D
+- Il est multiplateforme (fonctionne avec sur Steam, macOS, iOS, Android, PC)
+
+4. Voici les avantages de Unreal Engine 5 :
+- Plateforme de développement utilisable en version gratuite (sans limite de temps)
+- Son magasin d’actifs est bien rempli
+- Sa communauté est très active
+- Sa  documentation est complète
+- Il est idéal pour la création de contenus de réalité virtuelle
+- Il intègre de nombreux outils qui proposent de superbes contenus et des expériences en temps réel
+- Le suréchantillonnage est de haute qualité indépendamment de la plateforme (rendu dans une résolution beaucoup plus faible, mais avec des images de sortie dont la fidélité est équivalente à celle des images générées dans une résolution plus élevée)
+- Son éclairage global est dynamique et il gère aussi les reflets
+- L'environnement créé est entièrement dynamique avec une grande fidélité visuelle (et massivement détaillé)
+- Les mondes sont ouverts, grands et immersifs
 
 
+## CONCLUSION
 
-#### VEILLE SUR 
-
-Voici une comparaison entre plusieurs linters :
-- EsLint + Prettier (formatage du )
-- 
-
-#### VEILLE SUR 
-
-Voici une comparaison entre plusieurs outils de testing :
-- Vitest
-- Jest
-- etc.
-
-#### VEILLE SUR 
-
-Voici une comparaison entre plusieurs outils dockerisation :
-  - Docker
-  -
-
-#### VEILLE SUR 
-
-Voici une comparaison entre plusieurs outils de déploiement :
-  - Versel
-  - etc.
-
-
-
-
-___
-
-
-## REPONSES AUX QUESTIONS POUR LA PROPOSITION DE SOLUTION (il est possible de rajouter d'autres questions)
-
-**Pas obligé d'y répondre à toutes**
-
-___
-
-1. **Containerisation avec Docker :**
-
-   - Comment Docker peut-il être utilisé pour containeriser chaque service ?
-
-___
-
-   - Comment gérer les dépendances entre services dans un environnement Dockerisé ?
-
-
-___
-
-2. **Chaîne CI/CD Automatisée :**
-
-   - Comment mettre en place une chaîne CI/CD tenant compte de la séparation entre les équipes scientifiques et de production ?
-
-___
-
-   - Quelles étapes spécifiques doivent être automatisées pour garantir un processus CI/CD fiable ?
-
-___
-
-3. **Tests Automatisés :**
-
-   - Comment intégrer des tests automatisés à chaque étape du processus CI/CD ?
-
-___
-
-   - Quels types de tests sont essentiels pour assurer la stabilité des services ?
-  > faire des tests unitaires
-
-___
-
-4. **Surveillance et Logging :**
-
-   - Comment mettre en place une surveillance efficace des services en production ?
-
-___
-
-   - Quels mécanismes de logging peuvent aider à identifier rapidement les problèmes potentiels ?
-
-
-___
-
-
-## AXES D'AMELIORATION SUGGERES
-
-### FONCTIONNEMENT INTERNE
-
-
-### POINTS DE BLOCAGE IDENTIFIES PAR SIBIS
- 
+Dans le cadre de cette étude de cas, j'ai mis par écrit plusieurs suggestions de plans d'actions et j'ai aussi fait de la veille sur des technologies qui ont fait leurs preuve sur le marché. Mais je ne veux imposer aucun choix en particulier ni aucune préférence personnelle et je laisse à l'entreprise SIBIS toute la liberté d'opter pour les solutions qui sembleront les mieux correspondre à leur besoins spécifiques en lien avec la mise en place d'une stratégie DevOps.
 
 
 ## BIBLIOGRAPHIE
-
-https://www.panda3d.org/
-
-https://www.panda3d.org/features/
-
-https://unity.com/fr/products/unity-simulation-pro
-
-https://foxform3d.com/18-bonnes-raisons-dutiliser-unity/
-
-https://www.unrealengine.com/fr/unreal-engine-5
 
 https://blog-gestion-de-projet.com/manifeste-agile-valeurs-et-principes/#t-1621593889298
 
@@ -437,3 +321,13 @@ https://www.sales-hacking.com/outils/quora
 https://barrazacarlos.com/fr/avantages-et-inconvenients-de-la-discorde/
 
 https://www.codeur.com/blog/avantages-methode-dintegration-continue/
+
+https://www.panda3d.org/
+
+https://www.panda3d.org/features/
+
+https://unity.com/fr/products/unity-simulation-pro
+
+https://foxform3d.com/18-bonnes-raisons-dutiliser-unity/
+
+https://www.unrealengine.com/fr/unreal-engine-5

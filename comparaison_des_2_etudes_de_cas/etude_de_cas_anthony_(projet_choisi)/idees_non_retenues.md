@@ -129,3 +129,121 @@ ___
   Il faut donc créer entièrement la partie Frontend de l'application pour accèder aux modules de visualisation haute fidélité.
 
   L'application a vocation a être utilisé sur un ordinateur car c'est sur ce périphérique que sont utilisé les languages existans C++ et MatLab.
+
+  ____
+
+
+
+
+
+
+
+
+  ### VEILLES SUR LES OUTILS DE L'INTEGRATION CONTINUE
+
+> Peut-être le mettre uniquement dans l'autre dossier ?
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils de pré-commit :
+1. Husky
+2. 
+
+Voici les avantages de Husky :
+-
+-
+-
+-
+
+
+
+
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs linters :
+- EsLint + Prettier (formatage du )
+- 
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils de testing :
+- Vitest
+- Jest
+- etc.
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils dockerisation :
+  - Docker
+  -
+
+#### VEILLE SUR 
+
+Voici une comparaison entre plusieurs outils de déploiement :
+  - Versel
+  - etc.
+
+
+
+
+___
+
+
+## REPONSES AUX QUESTIONS POUR LA PROPOSITION DE SOLUTION (il est possible de rajouter d'autres questions)
+
+**Pas obligé d'y répondre à toutes**
+
+___
+
+1. **Containerisation avec Docker :**
+
+   - Comment Docker peut-il être utilisé pour containeriser chaque service ?
+
+___
+
+   - Comment gérer les dépendances entre services dans un environnement Dockerisé ?
+
+
+___
+
+2. **Chaîne CI/CD Automatisée :**
+
+   - Comment mettre en place une chaîne CI/CD tenant compte de la séparation entre les équipes scientifiques et de production ?
+
+___
+
+   - Quelles étapes spécifiques doivent être automatisées pour garantir un processus CI/CD fiable ?
+
+___
+
+3. **Tests Automatisés :**
+
+   - Comment intégrer des tests automatisés à chaque étape du processus CI/CD ?
+
+___
+
+   - Quels types de tests sont essentiels pour assurer la stabilité des services ?
+  > faire des tests unitaires
+
+___
+
+4. **Surveillance et Logging :**
+
+   - Comment mettre en place une surveillance efficace des services en production ?
+
+___
+
+   - Quels mécanismes de logging peuvent aider à identifier rapidement les problèmes potentiels ?
+
+
+___
+
+
+## AXES D'AMELIORATION SUGGERES
+
+### FONCTIONNEMENT INTERNE
+
+
+### POINTS DE BLOCAGE IDENTIFIES PAR SIBIS
+ 
