@@ -1,9 +1,12 @@
-# ETUDE DE CAS POUR AMELIORER LE DEVOPS DE L'ENTREPRISE SIBIS
+# ETUDE DE CAS - DEVOPS DE L'ENTREPRISE D-ICE ENGINEERING
 
+## Jérémy FELIX
+
+## Concepteur / Développeur d'Application Devops 2023 / 2024
 
 ## INTRODUCTION
 
-L'entreprise SIBIS ("Simulation of Interaction between Broken Ice and Structures") a conçu un simulateur d'opérations navales dans les mers de glaces afin d'éviter de mettre en jeu des ressources matérielles coûteuses pour optimiser la navigation de brise-glaces et de super-tanqueurs par d'autres entreprises qui font appel à leurs services.
+L'entreprise D-ICE Engineering a conçu un simulateur d'opérations navales dans les mers de glaces qui se nomme "SIBIS" comme "Simulation of Interaction between Broken Ice and Structures". Ce simulateur permet d'éviter de mettre en jeu des ressources matérielles coûteuses pour optimiser la navigation de brise-glaces et de super-tanqueurs par d'autres entreprises qui font appel à leurs services.
 
 ___
 
@@ -40,7 +43,7 @@ Voici quelques captures d'écran qui mettent en évidence des exemples de rendus
 
 ## OBJECTIF VISE
 
-L'objectif principal visé par SIBIS est d'offrir une représentation plus esthétique des données calculées pour améliorer la visualisation des différents scenarios de navigation possibles par les bateaux sans pour autant alterer la performance des calculs.
+L'objectif principal visé par l'entreprise est d'offrir une représentation plus esthétique des données calculées pour améliorer la visualisation (pour le moment générée par le simulateur) des différents scenarios de navigation possibles par les bateaux sans pour autant alterer la performance des calculs.
 
 ## MES MISSIONS 
 
@@ -52,7 +55,7 @@ Dans le cadre de cette étude de cas fictive, j'ai été missionné pour :
 
 ## METHODOLOGIE AGILE
 
-Mettre en place des méthodes de travail orientées "Agile" pour augmenter la performance d'une équipe ; voici les 12 principes fondateurs de cette méthodologie qu'il serait intérressant d'intégrer dans les processus de l'entreprise SIBIS :
+Mettre en place des méthodes de travail orientées "Agile" pour augmenter la performance d'une équipe ; voici les 12 principes fondateurs de cette méthodologie qu'il serait intérressant d'intégrer dans les processus de l'entreprise :
 - Livrer de la valeur au client
 - Intégrer les demandes de changement
 - Livrer fréquemment une version opérationnelle 
@@ -66,7 +69,7 @@ Mettre en place des méthodes de travail orientées "Agile" pour augmenter la pe
 - Construire le projet avec des équipes auto-organisées
 - Améliorer constamment l'efficacité de l'équipe
 
-Voici quelques uns des avantages à utiliser l'Agilité pour l'entreprise SIBIS :
+Voici quelques uns des avantages à utiliser l'Agilité pour l'entreprise :
 - L'adaptation constante du plan d'action
 - L'intégration des modifications et évolutions au fil de l'eau
 - Une communication renforcée entre les parties prenantes
@@ -92,7 +95,7 @@ On peut aussi citer les avantages suivants à utiliser l'Agilité (de façon plu
 
 Favoriser une meilleure communication entre les deux bureaux qui ont la même configuration (équipe de chercheurs spécialisé dans un domaine spécifique) en mettant à disposition un open space qui consiste à réunir des bureaux dans un espace ouvert et sans cloisons.
 
-Le problème est que la configuration actuelle des locaux loués par SIBUS ne sont pas adaptés à l'open space car toutes les salles sont déjà occupées par des colaborateurs. Puisque le batiment est loué, il n'est pas envisageable de casser des cloisons. La solution restante serait donc que l'entreprise SIBIS démenage dans d'autres locaux plus adaptés à l'aménagement d'un open space.
+Le problème est que la configuration actuelle des locaux loués par SIBUS ne sont pas adaptés à l'open space car toutes les salles sont déjà occupées par des colaborateurs. Puisque le batiment est loué, il n'est pas envisageable de casser des cloisons. La solution restante serait donc que l'entreprise démenage dans d'autres locaux plus adaptés à l'aménagement d'un open space.
 
 L'open space est un modèle économique qui comporte de nombreux avantages :
   - Environnement favorable pour la mise en place des méthodologies Agile
@@ -193,7 +196,7 @@ Cette option permettrait d'augmenter significativement la qualité du code produ
 
 Sur le long terme, on peut envisager une découpe du moteur de simulation monolythique en microservices indépendants grâce à un système de type "Gateway" (afin de décharger le moteur de certaines responsabilités qui sont suffisament différentes les unes des autres pour être séparées).
 
-Or, cette évolution demanderait un travail très conséquent pour l'équipe de dévelloppeurs (qui, pour rappel, n'est composée pour le moment que de stagiaires dont le contrat est temporaire par définition). De plus, il ne s'agit pas là du besoin exprimé par l'entreprise SIBIS dans l'attribution de mes responsabilités.
+Or, cette évolution demanderait un travail très conséquent pour l'équipe de dévelloppeurs (qui, pour rappel, n'est composée pour le moment que de stagiaires dont le contrat est temporaire par définition). De plus, il ne s'agit pas là du besoin exprimé par l'entreprise dans l'attribution de mes responsabilités.
 
 
 ## INTEGRATION CONTINUE / DEPLOIEMENT CONTINUE
@@ -295,7 +298,13 @@ Voici un comparatifs des moteurs graphiques que j'ai trouvés :
 
 ## CONCLUSION
 
-Dans le cadre de cette étude de cas, j'ai mis par écrit plusieurs suggestions de plans d'actions et j'ai aussi fait de la veille sur des technologies qui ont fait leurs preuve sur le marché. Mais je ne veux imposer aucun choix en particulier ni aucune préférence personnelle et je laisse à l'entreprise SIBIS toute la liberté d'opter pour les solutions qui sembleront les mieux correspondre à leur besoins spécifiques en lien avec la mise en place d'une stratégie DevOps.
+Dans le cadre de cette étude de cas, j'ai trouvé particulièrement motivant pour mon apprentissage personnel le fait que cet exercice d'analyse de cas sur le DevOps concernait un vrai client qui développe des produits à la pointe de la technologie ; cela m'a permis de mieux comprendre les atoûts et les freins structurels qu'induisent une telle entreprise afin de réfléchir sur la faisabilité des pistes d'améliorations que j'ai pu emettre.
+
+En effet, j'ai mis par écrit plusieurs suggestions de plans d'actions et j'ai aussi fait de la veille sur des technologies qui ont fait leurs preuve sur le marché. Mais je ne veux imposer aucun choix en particulier ni aucune préférence personnelle et je laisse à l'entreprise toute la liberté d'opter pour les solutions qui sembleront les mieux correspondre à leur besoins spécifiques en lien avec la mise en place d'une stratégie DevOps.
+
+Les problèmes rencontrés dans le cadre de cette analyse de cas concernaient surtout la compréhension de l'infrastructure actuellement présente dans l'entreprise ainsi que sur la vue globale des services rendus concrets par D-ICE Engineering ; la première version de l'énoncé de l'étude de cas a d'ailleurs été modifié plusieurs fois pour permettre d'éclaircir et d'apporter des précisions sur quelques points importants sur, par exemples, la constitution des équipes en interne ou la suppression des questions de réflexion imposées (qui n'offraient pas assez de liberté dans les propositions de solutions à apporter).
+
+Je suis désormais mieux armé pour comprendre la stratégie DevOps déployées dans les entreprises dans le secteur dans l'informatique et dans lesquelles je me projette pour exercer le métier de Concepteur / Développeur d'Application DevOps.
 
 
 ## BIBLIOGRAPHIE
